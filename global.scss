@@ -1,0 +1,80 @@
+/*
+ * FinanceFlow Mobile
+ * Global styles
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100%;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "Segoe UI",
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(37, 99, 235, 0.07),
+      transparent 35%
+    ),
+    var(--ff-bg);
+
+  color: var(--ff-ink);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Remove Ionic's default visual feel where possible */
+
+ion-app {
+  background: transparent;
+}
+
+ion-content {
+  --background: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Prevent ugly tap highlights */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d5dbe5;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

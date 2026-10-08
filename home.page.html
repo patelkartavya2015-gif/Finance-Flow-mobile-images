@@ -1,0 +1,174 @@
+<ion-header class="finance-header">
+  <ion-toolbar>
+    <div class="mobile-header">
+      <div class="brand">
+        <div class="brand-logo">F</div>
+
+    <div class="brand-text">
+      <strong>FinanceFlow</strong>
+      <span>Personal finance</span>
+    </div>
+  </div>
+
+  <button class="menu-button" (click)="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <main class="dashboard">
+
+<!-- PAGE HEADER -->
+
+<section class="page-header">
+
+  <div>
+    <span class="eyebrow">
+      OVERVIEW
+    </span>
+
+    <h1>
+      Good to see you.
+    </h1>
+
+    <p class="muted">
+      Here's your financial snapshot.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats">
+
+  <article class="stat-card">
+
+    <span class="stat-label">
+      Total spending
+    </span>
+
+    <strong>
+      ₹12,450
+    </strong>
+
+    <small>
+      24 expenses
+    </small>
+
+  </article>
+
+
+  <article class="stat-card">
+
+    <span class="stat-label">
+      Average expense
+    </span>
+
+    <strong>
+      ₹415
+    </strong>
+
+    <small>
+      Across recorded expenses
+    </small>
+
+  </article>
+
+
+  <article class="stat-card">
+
+    <span class="stat-label">
+      Top category
+    </span>
+
+    <strong>
+      Food
+    </strong>
+
+    <small>
+      ₹5,200 spent
+    </small>
+
+  </article>
+
+</section>
+
+
+<!-- RECENT EXPENSES -->
+
+<section class="panel">
+
+  <div class="section-heading">
+
+    <div>
+      <span class="eyebrow">
+        LATEST
+      </span>
+
+      <h2>
+        Recent expenses
+      </h2>
+    </div>
+
+    <button class="view-all">
+      View all →
+    </button>
+
+  </div>
+
+
+  <div class="expense-list">
+
+    <div
+      class="expense-row"
+      *ngFor="let expense of expenses"
+    >
+
+      <div class="expense-avatar">
+        {{ expense.icon }}
+      </div>
+
+      <div class="expense-main">
+
+        <strong>
+          {{ expense.title }}
+        </strong>
+
+        <span>
+          {{ expense.category }}
+        </span>
+
+      </div>
+
+      <strong class="expense-amount">
+        ₹{{ expense.amount }}
+      </strong>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ADD EXPENSE -->
+
+<button
+  class="add-button"
+  (click)="addExpense()"
+>
+  <span class="plus">+</span>
+  <span>Add expense</span>
+</button>
+
+  </main>
+
+</ion-content>

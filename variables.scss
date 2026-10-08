@@ -1,0 +1,67 @@
+:root {
+  /* FinanceFlow colors */
+  --ff-bg: #f5f7fb;
+  --ff-surface: #ffffff;
+  --ff-surface-soft: #f8fafc;
+
+  --ff-ink: #101828;
+  --ff-muted: #667085;
+  --ff-muted-light: #98a2b3;
+
+  --ff-line: #e8ecf2;
+
+  --ff-primary: #2563eb;
+  --ff-primary-dark: #1d4ed8;
+
+  --ff-sidebar: #0c1422;
+
+  --ff-success: #12b76a;
+  --ff-danger: #ef4444;
+
+  /* FinanceFlow gradients */
+  --ff-primary-gradient: linear-gradient(
+    135deg,
+    #3b82f6 0%,
+    #2563eb 100%
+  );
+
+  --ff-accent-gradient: linear-gradient(
+    135deg,
+    #1d4ed8 0%,
+    #2563eb 100%
+  );
+
+  --ff-sidebar-gradient: linear-gradient(
+    180deg,
+    #101a2b 0%,
+    #0b1320 100%
+  );
+
+  /* FinanceFlow shadows */
+  --ff-shadow: 0 12px 40px rgba(16, 24, 40, 0.06);
+
+  --ff-shadow-heavy: 0 30px 80px rgba(16, 24, 40, 0.15);
+
+  /* FinanceFlow radius */
+  --ff-radius: 18px;
+  --ff-radius-small: 11px;
+
+  /* Ionic overrides */
+  --ion-background-color: var(--ff-bg);
+  --ion-text-color: var(--ff-ink);
+
+  --ion-color-primary: #2563eb;
+  --ion-color-primary-rgb: 37, 99, 235;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #1d4ed8;
+  --ion-color-primary-tint: #3b82f6;
+
+  --ion-font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "Segoe UI",
+    sans-serif;
+}
